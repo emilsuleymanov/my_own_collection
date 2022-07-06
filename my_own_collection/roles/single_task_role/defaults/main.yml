@@ -1,2 +1,4 @@
 ---
 # defaults file for single_task_role
+path: "./example_file.txt"
+content: "I'm example of content"

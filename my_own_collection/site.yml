@@ -1,5 +1,10 @@
 ---
-- name: Run my_own_module
-  hosts: localhost
-  roles:
-    - single_task_role
+  - name: Collection playbook test
+    hosts: localhost
+    collections:
+      - my_own_collection
+    vars:
+      - path: "./collection_test.txt"
+      - content: "Test content"
+    roles:
+      - single_task_role
